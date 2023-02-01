@@ -1,0 +1,24 @@
+<!-- <ul class="list-group">
+    <li class="list-group-item"><p>Nombre: {{guitar?.name | uppercase}}</p></li>
+    <li class="list-group-item"><p>Descripción: {{guitar?.description}}</p></li>
+    <li class="list-group-item"><p>Imagen: <img width="30" height="30" src="{{guitar?.img}}" /> </p></li>
+</ul> -->
+
+<div class="card mb-3 justify-content-center" style="max-width: 540px">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{guitar?.img}}" class="img-fluid rounded-start" alt="..." />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{guitar?.name | uppercase}}</h5>
+        <p class="card-text">
+            {{guitar?.description}}
+        </p>
+        <p class="card-text">
+          <small class="text-muted">Quedan pocas unidades</small>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Estas mirando {{ guitar?.name }}</h1>
+
+  <hr />
+
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <img [src]="guitar?.img" class="img-fluid" />
+
+      <br /><br />
+
+      <div class="col-md-8 text-center">
+        <h3>{{ guitar?.name }}</h3>
+
+        <hr />
+        <p>Descripción {{ guitar?.description }}</p>
+
+        <a class="btn btn-primary m-2" [routerLink]="['/guitars']">
+          Volver</a
+        >
+        <a class="btn btn-success" [routerLink]="['/editguitar', id]">
+          Editar</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

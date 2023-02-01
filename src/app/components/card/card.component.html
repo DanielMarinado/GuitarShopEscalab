@@ -1,0 +1,14 @@
+<div class="card bg-dark text-white" style="width: 18rem;">
+  <img [src]="dataInput.img"  height="300" class="card-img-top" />
+
+  <div class="card-body">
+    <h5 class="card-title">{{ dataInput.name }}</h5>
+    <p class="card-text">{{ dataInput.description }}</p>
+    <div>
+      <button class="btn btn-primary m-2" (click)="detailsGuitar(indexInput)">
+        Detalles
+      </button>
+      <a class="btn btn-success" (click)="buyGuitar()">Comprar</a>
+    </div>
+  </div>
+</div>

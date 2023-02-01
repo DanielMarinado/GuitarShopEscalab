@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="card-group text-center gap-3 mt-3 justify-content-center">
+    <app-card
+      (selectGuitar)="addCart($event)"
+      [dataInput]="data"
+      [indexInput]="i"
+      *ngFor="let data of items; let i = index"
+    ></app-card>
+  </div>
+
+  <hr />
+
+  <div class="container alert alert-primary" role="alert">
+    <h1 class="display-5 fw-bold">Tu Carrito</h1>
+    <div *ngIf="cart.length > 0" class="container">
+      <div class="card-group text-center gap-3 mt-3 justify-content-center">
+        <app-carrito [data]="item" *ngFor="let item of cart"></app-carrito>
+      </div>
+    </div>
+
+    <p *ngIf="cart.length == 0">No hay elementos en el carrito actualmente.</p>
+  </div>
+</div>
