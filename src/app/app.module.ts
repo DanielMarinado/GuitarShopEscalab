@@ -6,13 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-// import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { GuitarsComponent } from './components/guitars/guitars.component';
 import { CardComponent } from './components/card/card.component';
 import { CartComponent } from './components/cart/cart.component';
 import { EditGuitarComponent } from './components/edit-guitar/edit-guitar.component';
-// import { NewGuitarComponent } from './components/new-guitar/new-guitar.component';
 import { DetailGuitarComponent } from './components/detail-guitar/detail-guitar.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -20,13 +18,11 @@ import { ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     HeaderComponent,
-    // HomeComponent,
     FooterComponent,
     GuitarsComponent,
     CardComponent,
     CartComponent,
     EditGuitarComponent,
-    // NewGuitarComponent,
     DetailGuitarComponent
   ],
   imports: [
