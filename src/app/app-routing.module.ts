@@ -19,8 +19,8 @@ const routes: Routes = [
   { path: 'home', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule) },
   { path: 'newguitar', loadChildren: () => import('./components/new-guitar/new-guitar.module').then(m => m.NewGuitarModule), canActivate: [Auth0Guard] },
   { path: 'guitars', component: GuitarsComponent, canActivate: [Auth0Guard] },
-  { path: 'editguitar/:id', component: EditGuitarComponent, canActivate: [AuthGuard] },
-  { path: 'guitar/:id', component: DetailGuitarComponent, canActivate: [AuthGuard] },
+  { path: 'editguitar/:id', component: EditGuitarComponent, canActivate: [Auth0Guard] },
+  { path: 'guitar/:id', component: DetailGuitarComponent, canActivate: [Auth0Guard] },
   { path: '', pathMatch: 'full', redirectTo: '/home' },
 ];
 
